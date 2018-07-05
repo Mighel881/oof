@@ -1,0 +1,9 @@
+Package: com.shade.oof
+Name: oof
+Depends: mobilesubstrate
+Version: 0.1
+Architecture: iphoneos-arm
+Description: Can I get an oof in the chat?
+Maintainer: Shade Zepheri <ziroalpha@gmail.com>
+Author: Shade Zepheri <ziroalpha@gmail.com>
+Section: Tweaks
