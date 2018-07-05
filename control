@@ -1,6 +1,6 @@
 Package: com.shade.oof
 Name: oof
-Depends: mobilesubstrate
+Depends: mobilesubstrate, preferenceloader, ws.hbang.common
 Version: 0.1
 Architecture: iphoneos-arm
 Description: Can I get an oof in the chat?

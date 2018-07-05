@@ -1,10 +1,13 @@
 #import <AVFoundation/AVFoundation.h>
-#import <HBLog.h>
+#import <Cephei/HBPreferences.h>
 
+BOOL enabled;
 AVAudioPlayer *player;
 
 void playOofSound() {
-    HBLogDebug(@"Press F to pay respects");
+    if (!enabled) {
+        return;
+    }
 
     NSBundle *resourceBundle = [NSBundle bundleWithPath:@"/var/mobile/Library/oof/foo.bundle"];
     NSURL *audioURL = [resourceBundle URLForResource:@"oof" withExtension:@"wav"];
@@ -29,3 +32,8 @@ void playOofSound() {
 }
 
 %end
+
+%ctor {
+    HBPreferences *preferences = [HBPreferences preferencesForIdentifier:@"com.shade.oof"];
+    [preferences registerBool:&enabled default:YES forKey:@"enabled"];
+}
