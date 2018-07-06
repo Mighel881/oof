@@ -15,7 +15,7 @@
 		<key>default</key>
 		<true/>
 		<key>icon</key>
-		<string>TestIcon.png</string>
+		<string>oof.png</string>
 		<key>PostNotification</key>
 		<string>com.shade.oof/ReloadPrefs</string>
 	</dict>
